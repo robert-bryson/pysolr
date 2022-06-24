@@ -352,7 +352,7 @@ class Solr(object):
         use_qt_param=False,
         always_commit=False,
         auth=None,
-        verify=True,
+        verify='/etc/ssl/certs/ca-certificates.crt',
         session=None,
     ):
         self.decoder = decoder or json.JSONDecoder()
